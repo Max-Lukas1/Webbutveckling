@@ -23,3 +23,33 @@ text-align: right;
 a{
     text-decoration: none;
 }
+
+header{
+    background-color: aqua;
+    grid-area: header;
+}
+
+nav{
+    background-color: blue;
+    grid-area: nav;
+}
+
+nav > ul{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+}
+
+main{
+    background-color: brown;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+}
+
+nav li{
+    list-style-type: none;
+    text-align: center;
+    display: grid;
+    align-items: stretch;
+}
